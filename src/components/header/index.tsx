@@ -1,24 +1,21 @@
 import React, { useState } from "react"
-import Avatar from "avataaars"
 
 import "./header.css"
 import Socials from "../socials"
+import AvatarDefault from "../../assets/avatar-default.svg"
+import AvatarDefaultGlasses from "../../assets/avatar-default-glasses.svg"
+import AvatarSmile from "../../assets/avatar-smile.svg"
+import AvatarSmileGlasses from "../../assets/avatar-smile-glasses.svg"
 
 const Header: React.FC = () => {
-  const [mouthType, setMouthType] = useState("Twinkle")
-  const [accessoriesType, setAccessoriesType] = useState("Blank")
+  const [isSmiling, setIsSmiling] = useState(false)
+  const [isWearingSunglasses, setIsWearingSunglasses] = useState(false)
 
-  const toggleAccessories = () => {
-    if (accessoriesType === "Blank") {
-      setAccessoriesType("Sunglasses")
-    } else {
-      setAccessoriesType("Blank")
-    }
-  }
+  const toggleSunglasses = () => setIsWearingSunglasses(!isWearingSunglasses)
 
-  const handleMouseOver = () => setMouthType("Smile")
+  const handleMouseOver = () => setIsSmiling(true)
 
-  const handleMouseLeave = () => setMouthType("Twinkle")
+  const handleMouseLeave = () => setIsSmiling(false)
 
   return (
     <header>
@@ -26,22 +23,19 @@ const Header: React.FC = () => {
         className={"header__picture-container"}
         onMouseOver={handleMouseOver}
         onMouseLeave={handleMouseLeave}
-        onClick={toggleAccessories}
+        onClick={toggleSunglasses}
       >
-        <Avatar
-          avatarStyle="Circle"
-          topType="ShortHairShortFlat"
-          accessoriesType={accessoriesType}
-          hairColor="Red"
-          facialHairType="BeardLight"
-          facialHairColor="Red"
-          clotheType="ShirtCrewNeck"
-          clotheColor="Gray02"
-          eyeType="Default"
-          eyebrowType="Default"
-          mouthType={mouthType}
-          skinColor="Light"
-        />
+        {isSmiling ? (
+          isWearingSunglasses ? (
+            <AvatarSmileGlasses />
+          ) : (
+            <AvatarSmile />
+          )
+        ) : isWearingSunglasses ? (
+          <AvatarDefaultGlasses />
+        ) : (
+          <AvatarDefault />
+        )}
       </div>
       <div className={"header__profile-content"}>
         <h1>Bill Hefty</h1>
