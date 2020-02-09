@@ -1,0 +1,56 @@
+.layout__blob-main {
+  position: fixed;
+  top: -150px;
+  right: -750px;
+  z-index: -1;
+}
+
+.layout__blob-main svg {
+  width: 1300px;
+  height: 1300px;
+  opacity: 0.6;
+}
+
+.layout__blob-secondary {
+  position: fixed;
+  top: -250px;
+  right: -800px;
+  z-index: -1;
+}
+
+.layout__blob-secondary svg {
+  width: 1500px;
+  opacity: 0.2;
+  height: 1500px;
+}
+
+.app-container {
+  max-width: 1200px;
+  padding: 100px;
+  position: relative;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .layout__blob-main {
+    opacity: 0.3;
+  }
+
+  .layout__blob-secondary {
+    opacity: 0.5;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .layout__blob-main {
+    display: none;
+  }
+
+  .layout__blob-secondary {
+    opacity: 0.5;
+  }
+
+  .app-container {
+    padding: 50px;
+  }
+}

@@ -1,0 +1,29 @@
+.link__wrapper {
+  margin-bottom: 30px;
+}
+
+.link__link-title {
+  border-bottom: 1px solid #3997dc;
+  color: #32404b;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.link__link-title:hover {
+  color: #3997dc;
+}
+
+.link__title {
+  color: #32404b;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.link__desc {
+  font-size: 16px;
+}
