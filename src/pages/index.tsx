@@ -23,7 +23,7 @@ const IndexPage = () => (
       <ExternalLink
         title="Whole Foods Market"
         link="https://www.wholefoodsmarket.com/"
-        desc="Senior UI Developer, January 2020 - Present"
+        desc="Senior Software Development Engineer, January 2020 - Present"
       />
       <ExternalLink
         title="RentMindMe"
@@ -36,33 +36,6 @@ const IndexPage = () => (
         desc="Developer, January 2016 - January 2020"
       />
     </Section>
-    {/* <Section id="projects" title="Projects">
-      <ExternalLink
-        title="Pivalink"
-        link="https://pivalink.com"
-        desc="Tool to create microlanding pages that can be easily updated and customized to fit any brand"
-      />
-      <ExternalLink
-        title="Coursefacts"
-        link="https://coursefacts.com"
-        desc="A platform where students can read and write university / college course reviews anonymously"
-      />
-      <ExternalLink
-        title="Dev Blog"
-        link="https://github.com/RyanFitzgerald/devblog"
-        desc="A open source and minimal personal blog template for developers built with Gatsby and React"
-      />
-      <ExternalLink
-        title="Dev Portfolio"
-        link="https://github.com/RyanFitzgerald/devportfolio"
-        desc="An open source and customizable single-page personal portfolio template for developers"
-      />
-      <ExternalLink
-        title="Day Counter"
-        link="https://chrome.google.com/webstore/detail/day-counter-new-tab-page/popaiegponeiefbiddhmaphpbdjoegff?hl=en"
-        desc="Chrome extension to track days until or since life events with over 5k active users"
-      />
-    </Section> */}
     <Section id="skills" title="Skills">
       <ExternalLink
         title="Languages & Frameworks"
