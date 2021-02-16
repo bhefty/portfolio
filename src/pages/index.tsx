@@ -4,13 +4,15 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Section from "../components/section"
 import ExternalLink from "../components/externalLink"
+import cdaImg from "../images/aws-certified-developer-associate.png"
+import ccpImg from "../images/aws-certified-cloud-practitioner.png"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Section id="about" title="About Me">
       <p>
-        I'm a highly motivated front-end developer who has experience building
+        I'm a highly motivated full stack developer who has experience building
         effective and scalable web applications across various domains.
       </p>
       <p>
@@ -39,13 +41,17 @@ const IndexPage = () => (
     <Section id="skills" title="Skills">
       <ExternalLink
         title="Languages & Frameworks"
-        desc="JavaScript (ES6+), Typescript, React, Node.js, Express.js"
+        desc="JavaScript (ES6+), Typescript, React, Node.js, Express.js, C#"
       />
       <ExternalLink title="Databases" desc="Firebase, Firestore, MongoDB" />
       <ExternalLink
         title="Other"
-        desc="GCP, Amazon Web Services (AWS), CI / CD, Microservices"
+        desc="Amazon Web Services (AWS), CI / CD, Microservices"
       />
+    </Section>
+    <Section id="certifications" title="Certifications">
+      <img src={cdaImg} alt={"AWS Certified Developer Associate Badge"} />
+      <img src={ccpImg} alt={"AWS Certified Cloud Practioner Badge"} />
     </Section>
   </Layout>
 )

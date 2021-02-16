@@ -39,7 +39,7 @@ const Header: React.FC = () => {
       </div>
       <div className={"header__profile-content"}>
         <h1>Bill Hefty</h1>
-        <h2>Front-End developer based in Austin, TX.</h2>
+        <h2>Software developer based in Austin, TX.</h2>
         <Socials />
       </div>
     </header>
